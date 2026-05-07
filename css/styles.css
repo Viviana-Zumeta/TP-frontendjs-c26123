@@ -1,0 +1,297 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  background: #F1FAEE;
+  color: #1D3557;
+
+  /* Lo nuevo */
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+main {
+  width: 80%;
+  margin: auto;
+  padding-bottom: 3rem;
+
+  /* Propiedad "flex" agrupa las 3 cosas: grow, shrink y basis */
+  /* equivale a: flex: 1 1 0
+  Puede crecer, puede achicarse, arranca sin tamaño base (0) */
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.15;
+  margin: 3rem 0;
+}
+
+h2 {
+  color: #588157;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.btn {
+  border: none;
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+header
+ {
+  background:  #b22222;
+  color: #fff7fb;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+    height: 80px; /* Ajusta la altura según qué tan grande quieras el logo */
+    width: auto;  /* Mantiene la proporción original para que no se deforme */
+    display: block; /* Elimina espacios vacíos accidentales debajo de la imagen */
+}
+
+/* Opcional: Centrar el logo dentro del div si es necesario */
+
+
+.div-logo {
+  margin-left: 2rem;
+  font-weight: bold;
+}
+
+.logo,
+.header-nav ul li a {
+  text-decoration: none;
+  font-size: 2.5rem;
+  color: inherit;
+  display: inline-block;
+  padding: 1rem;
+}
+.header-nav {
+  margin-right: 2rem
+}
+.header-nav ul,
+footer .footer-list {
+  list-style: none;
+
+  /* Hago que los li se acomoden en fila con una distancia entre ellos de 2rem */
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer-list li {
+  padding: 0.5rem;
+}
+
+.footer-list img {
+  width: 4rem;
+  padding: 0.5rem;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   COLORES                                  */
+/* -------------------------------------------------------------------------- */
+.bg-primary {
+  background-color: #6e5a8e;
+}
+
+.bg-secondary {
+  background-color: #E63946;;
+}
+
+.text-light {
+  color: #ffffff;
+}
+
+.text-dark {
+  color: #2a1e35;
+}
+
+.text-secondary {
+  color: #588157;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                    HOME                                    */
+/* -------------------------------------------------------------------------- */
+
+.parrafo, .subtitulo-contacto {
+  width: 80%;
+  text-align: center;
+  font-size: 2rem;
+  padding: 3rem ;
+}
+.subtitulo-contacto {
+   width: 100%;
+  text-align: left;
+  font-size: 2rem;
+  padding: 3rem ;
+}
+.contenedor-tarjetas {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.card {
+  background-color: #B7E4C7;
+  color: #2a1e35;
+  width: 30rem;
+  text-align: center;
+  border-radius: 1rem;
+  overflow: hidden;
+
+  /* Nuevo: */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+  padding-bottom: 2rem;
+}
+
+.card img {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+ } 
+
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  CONTACTO                                  */
+/* -------------------------------------------------------------------------- */
+.titulo-contacto {
+  margin: 2rem 0;
+}
+
+.form-contacto {
+  background-color: #B7E4C7;
+  color: #2a1e35;
+  width: 100%;
+  max-width: 50rem;
+  font-size: 1.6rem;
+  padding: 3rem;
+  border-radius: 1rem;
+
+  
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.grupo-input{
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-bottom: 2rem;
+}
+ .info-contacto {
+    margin-top: 3rem;
+    color: #1D3557;
+    line-height: 1.5;
+  }
+
+  .mapa iframe {
+    width: 100%;
+    height: 250px;
+    border: none;
+    margin-top: 3rem;
+  }
+
+/* -------------------------------------------------------------------------- */
+/*                                MEDIA QUERIES                               */
+/* -------------------------------------------------------------------------- */
+@media (max-width: 600px) {
+  header,
+  footer {
+      flex-direction: column;
+    
+  }
+  
+  .header-nav, .div-logo {
+    margin: 0;
+  }
+  
+}
+footer {
+    background-color: #b22222; /* El azul oscuro que combina con el rojo tomate */
+    color: #fff7fb;
+    padding-top: 40px;
+    width: 100%;
+}
+
+.footer-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap; /* Para que en el celular las columnas se pongan una abajo de otra */
+    justify-content: space-between;
+    padding: 0 20px 40px 20px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 250px; /* Evita que las columnas sean muy flacas */
+    margin-bottom: 20px;
+}
+
+.footer-column h3, .footer-column h4 {
+    color: #2a1e35; /* Rojo tomate para resaltar los títulos */
+    margin-bottom: 15px;
+    font-size: 2rem
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #F1FAEE;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #A3B18A; /* El verde clarito que elegiste para el hover */
+}
+
+.footer-bar {
+    text-align: center;
+    background-color: #740303; /* Un tono un poquito más oscuro para la base final */
+    padding: 20px 0;
+    font-size: 1rem;
+}

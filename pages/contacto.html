@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="div-logo"><a class="logo" href="../index.html"><img src="../img/mapa5.png"></a></div>
+
+      <nav class="header-nav">
+        <ul>
+          <li>
+            <a href="../index.html">Menú</a>
+          </li>
+          <li>
+            <a href="./contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1 class="titulo-contacto text-secondary">Contactanos</h1>
+      <p class="subtitulo-contacto">Estamos para ayudarte. Escribinos y te responderemos a la brevedad.</p>
+
+      <form class="form-contacto" action="https://formspree.io/f/mbdpwwrv" method="POST">
+        <div class="grupo-input">
+          <label for="email"> Tú correo: </label>
+          <input id="email" type="email" name="email" />
+        </div>
+        <div class="grupo-input">
+          <label for="mensaje"> Tú mensaje: </label>
+          <textarea id="mensaje" name="message"></textarea>
+        </div>
+        <!-- your other form fields go here -->
+        <button class="btn bg-secondary text-dark" type="submit">Enviar</button>
+      </form>
+      <div class="info-contacto">
+      <p class="subtitulo-contacto">Nos encontramos en el corazón de la ciudad. Vení a visitarnos o pedí desde tu casa.</p>
+    <p>📍 Av. Corrientes 123, CABA</p>
+    <p>📞 +54 11 1234-5678</p>
+    <p>🕒 Lunes a Domingo: 10:00 - 23:00</p>
+    <p>📧 hola@tuttipizza.com</p>
+    <p>🌐 Seguinos en:
+      <a href="#">Facebook</a> |
+      <a href="#">Instagram</a> |
+      <a href="#">Twitter</a>
+    </p>
+  </div>
+
+  <div class="mapa">
+    <iframe src="https://www.google.com/maps/embed?..."></iframe>
+  </div>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <!-- Columna 1: Branding -->
+        <div class="footer-column">
+            <h3>Tutti Pizza</h3>
+            <p>El sabor de la tradición italiana en cada porción. Masa madre y los mejores ingredientes locales.</p>
+        </div>
+
+        <!-- Columna 2: Enlaces Rápidos -->
+        <div class="footer-column">
+            <h4>Navegación</h4>
+            <ul>
+                <li><a href="#">Menú</a></li>
+                <li><a href="#">Promociones</a></li>
+                <li><a href="#">Sobre Nosotros</a></li>
+            </ul>
+        </div>
+
+        <!-- Columna 3: Contacto -->
+        <div class="footer-column">
+            <h4>Contacto</h4>
+            <p>📍 Av. Corrientes 1234, CABA</p>
+            <p>📞 +54 11 1234-5678</p>
+            <p>⏰ Lunes a Domingo: 10 a 23hs</p>
+          <nav>
+              <ul class="footer-list">
+                <li><img src="../img/whatsapp2.png" alt="logo de whatsapp" /></li>
+                <li><img src="../img/logotipo-de-instagram.png" alt="logo de logotipo-de-instagram" /></li>
+                <li><img src="../img/facebook.png" alt="logo de facebook" /></li>
+              </ul>
+          </nav>
+        </div>
+    </div>
+    <div class="footer-bar">
+        <p>&copy; 2026 Tutti Pizza.Todos los derechos reservados.Para Frontendjs26123.</p>
+    </div>
+  </footer>
+  </body>
+</html>
