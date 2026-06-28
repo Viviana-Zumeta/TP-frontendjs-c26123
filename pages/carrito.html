@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <title>Carrito</title>
+  </head>
+  <body>
+    <header>
+      <div class="div-logo">
+        <a class="logo" href="./index.html">
+        <img src="../img/mapa5.png" alt="imagen de logo">
+        </a>
+      </div>
+
+      <nav class="header-nav">
+        <ul>
+          <li>
+            <a href="../index.html">Menú</a>
+          </li>
+          <li>
+            <a href="./contacto.html">Contacto</a>
+          </li>
+          <li>
+            <a href="./carrito.html" class="pizza-icono">🍕 <span id="contador-carrito">0</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Mi Pedido de Pizzas</h1>
+      <section id="contenedor-carrito" class="contenedor-tarjetas">
+        <!-- Productos del carrito -->
+      </section>
+
+      <div id="acciones-carrito" class="acciones-carrito">
+        <!-- Botones de eliminar y finalizar compra se agregan desde JS -->
+      </div>
+
+      <section id="resumen-carrito">
+        <!-- Aca ira el resumen del carrito -->
+          <h3>Resumen de tu Pedido</h3>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <!-- Columna 1 -->
+          <div class="footer-column">
+            <h3>Tutti Pizza</h3>
+            <p>El sabor de la tradición italiana en cada porción. Masa madre y los mejores ingredientes locales.</p>
+          </div>
+        
+        <!-- Columna 2 -->
+          <div class="footer-column">
+            <h4>Navegación</h4>
+            <ul>
+                <li><a href="#">Menú</a></li>
+                <li><a href="#">Promociones</a></li>
+                <li><a href="#">Sobre Nosotros</a></li>
+            </ul>
+        </div>
+        
+        <!-- Columna 3 -->
+          <div class="footer-column">
+            <h4>Contacto</h4>
+              <p>📍 Av. Corrientes 1234, CABA</p>
+              <p>📞 +54 11 1234-5678</p>
+              <p>⏰ Lunes a Domingo: 10 a 23hs</p>
+              <nav>
+                <ul class="footer-list">
+                  <li><img src="../img/whatsapp2.png" alt="logo de whatsapp" /></li>
+                  <li><img src="../img/logotipo-de-instagram.png" alt="logo de logotipo-de-instagram" /></li>
+                  <li><img src="../img/facebook.png" alt="logo de facebook" /></li>
+                </ul>
+              </nav>
+          </div>
+      </div>
+      <div class="footer-bar">
+        <p>&copy; 2026 Tutti Pizza. Todos los derechos reservados. Para FrontendjsC26123.</p>
+      </div>
+    </footer>
+      <script type="module" src="../js/carrito.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script
+  </body>
+</html>

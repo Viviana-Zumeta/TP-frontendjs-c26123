@@ -1,0 +1,52 @@
+[
+  {
+    "id": "1",
+    "nombre": "Cuatro Quesos",
+    "descripcion": "Mozzarella, Queso Azul, Fontina y Parmesano",
+    "precio": 23878 ,
+    "img": "img/Cuatro Quesos.jpg"
+    
+  },
+  {
+    "id": "2",
+    "nombre": "Champiñón",
+    "descripcion": "Champiñones, Queso Parmesano, Ajo y Perejil",
+    "precio": 14766,
+    "img": "img/Champiñón.jpg"
+  },
+  {
+    "id": "3",
+    "nombre": "Fugazzeta",
+    "descripcion": "Cebolla, Mozzarella y Queso Cuartirolo",
+    "precio": 10344,
+    "img": "img/Fugazzeta.jpg"
+  },
+  {
+    "id": "4",
+    "nombre": "Margarita",
+    "descripcion": "Tomate, Mozzarella, Albahaca y Aceite de Oliva",
+    "precio": 18999,
+    "img": "img/Margarita.jpg"
+  },
+  {
+    "id": "5",
+    "nombre": "Napolitana",
+    "descripcion": "Mozzarella, Jamón cocido y Morrones asados",
+    "precio": 24511,
+    "img": "img/Napolitana.jpg"
+  },
+  {
+    "id": "6",
+    "nombre": "Pepperoni",
+    "descripcion": "Tomate, Mozzarella y rodajas de Pepperoni", 
+    "precio": 16322,
+    "img": "img/Pepperoni.jpg"
+  },
+  {
+    "id": "7",
+    "nombre": "Veggie",
+    "descripcion": "Tomate,Mozzarella y Vegetales frescos o asados",
+    "precio": 20831,
+    "img": "img/Veggie.jpg"
+  }
+]

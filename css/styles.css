@@ -48,13 +48,35 @@ h2 {
   text-align: center;
   margin: 3rem 0;
 }
+h3 {
+  color: #5D4037;
+  margin:1rem 0;
+}
+p1 {
+  font-weight: bold;
+  color: #1D3557; /* Total resaltado en dorado suave */
+  margin-top: 15px;
+  background-color: #28b903;
+}
+  
 
 .btn {
   border: none;
   font-size: 1.6rem;
   font-weight: bold;
-  padding: 1rem;
+  padding: 1.6rem;
   border-radius: 1rem;
+}
+.btn-eliminar-carrito {
+  background-color:  #04c52e;
+  border: 2px solid #038a03;
+}
+.btn-vaciar-carrito {
+  background-color: #FFB74D;
+  color: #1d1a20;
+}
+.btn-vaciar-carrito:hover {
+  background-color: #FFA726;
 }
 
 header
@@ -226,7 +248,7 @@ footer {
     background-color: #b22222; 
     color: #fff7fb;
     padding-top: 40px;
-    width: 100%;
+    width: 100%;  
 }
 
 .footer-container {
@@ -235,7 +257,7 @@ footer {
     display: flex;
     flex-wrap: wrap; 
     justify-content: space-between;
-    padding: 0 20px 40px 20px;
+    padding: 0 20px 40px 20px;  
 }
 
 .footer-column {
@@ -275,6 +297,17 @@ footer {
     padding: 20px 0;
     font-size: 1rem;
 }
+/* -------------------------------------------------------------------------- */
+/*                               Carrito                              */
+/* -------------------------------------------------------------------------- */
+.mensaje-carrito-vacio {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+.acciones-carrito {
+  margin-top: 2rem;
+}
 
 /* -------------------------------------------------------------------------- */
 /*                                MEDIA QUERIES                               */
@@ -291,4 +324,3 @@ footer {
   }
   
 }
-
